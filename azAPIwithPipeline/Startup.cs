@@ -17,7 +17,7 @@ namespace azAPIwithPipeline
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            Configuration = configuration;  //hey
         }
 
         public IConfiguration Configuration { get; }
@@ -31,7 +31,8 @@ namespace azAPIwithPipeline
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+          //  if (env.IsDevelopment())
+          if (1 == 1)
             {
                 app.UseDeveloperExceptionPage();
             }
